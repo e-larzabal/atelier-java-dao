@@ -16,14 +16,8 @@ public class StudentRepoBdx implements StudentDao {
         students.add(new Student("Benat"));
         students.add(new Student("Leontxo"));
         students.add(new Student("Maitane"));
-
-        Student antton = new Student("Antton");
-        students.add(antton);
-
+        students.add(new Student("Antton"));
         return students;
     }
 
-    public String test() {
-        return "Coucou!!!";
-    }
 }

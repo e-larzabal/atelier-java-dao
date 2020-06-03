@@ -7,8 +7,5 @@ import java.util.List;
 
 public interface StudentDao {
 
-    /**
-     * @return
-     */
     List<Student> findAll();
 }
