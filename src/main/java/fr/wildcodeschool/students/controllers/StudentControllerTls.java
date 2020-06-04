@@ -1,6 +1,7 @@
 package fr.wildcodeschool.students.controllers;
 
 import fr.wildcodeschool.students.models.Student;
+import fr.wildcodeschool.students.repository.StudentDao;
 import fr.wildcodeschool.students.repository.StudentRepoTls;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -12,10 +13,10 @@ import java.util.List;
 
 @Controller
 public class StudentControllerTls {
-    
+
     @Autowired
     @Qualifier("studentRepoTls")
-    private StudentRepoTls studentRepoTls;
+    private StudentDao studentRepoTls;
 
     @ResponseBody
     @GetMapping("/students/Toulouse")
